@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  /* Fontes */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+}
+
+.close{
+    display: flex;
+    position: absolute;
+    transform: translateY(-500%);
+    margin-left: 50rem;
+    transition: transform 100ms linear;
+}
+
+.icon-close{
+    color: #000;
+    font-size: 1rem;
+}
+
+.icon-close:hover{
+    transform: scale(2);
+}

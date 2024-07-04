@@ -1,0 +1,136 @@
+/* fontes */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    font-size: 62.5%;
+    --default-border: 1px solid rgba(0, 0, 0, 0.15);
+    --default-border-radius: 1.2rem;
+    --color-span: #ff5678;
+    --color-button-first: #35e6e9;
+    --color-button-second: #ff5678;
+}
+
+html {
+    overflow: hidden; 
+  }
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+}
+
+main {
+    width: 60rem;
+    height: 52rem;
+    padding: 5.7rem 4.4rem;
+    border: var(--default-border);
+    border-radius: var(--default-border-radius);
+}
+
+aside{
+    grid-area: hero;
+}
+
+main{
+    grid-area: form;
+}
+
+.content{
+    display: grid;
+    grid-template-areas: 
+    ". . . . ."
+    ". . hero form ."
+    ". . hero form ."
+    ". . . . ."
+    ;
+    gap: 7.5rem;
+    margin: -4rem;
+}
+span {
+    color: var(--color-span);
+}
+
+h1 {
+    font-size: 7.5rem;
+    text-wrap: nowrap;
+    font-weight: 500;
+}
+
+h2 {
+    min-width: 43rem;
+    font-size: 3.2rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    gap: 1.5rem;
+
+    font-size: 2.4rem;
+    height: 5.5rem;
+    margin-top: 6.4rem;
+    
+    & .btn {
+        border-radius: var(--default-border-radius);
+        margin-top: 4.8rem;
+        padding: 1rem;
+    }
+    
+    & .first,
+    & .second {
+        background-color: var(--color-button-first);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    & .second {
+        background-color: var(--color-button-second);
+    }
+}
+
+.link {
+    color: #fff;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    margin-top: 16rem;
+
+    & p {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    & a {
+        color: #000;
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        text-decoration: underline;
+    }
+}
+
+/* Tela cadastro */
+form {
+    display: flex;
+    flex-flow: column;
+    gap: .5rem;
+    padding: 2rem;
+
+    & input,
+    & select {
+        width: 48rem;
+        height: 4rem;
+        border: var(--default-border);
+        border-radius: var(--default-border-radius);
+    }
+}

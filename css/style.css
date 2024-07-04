@@ -32,7 +32,10 @@ main {
     padding: 5.7rem 4.4rem;
     border: var(--default-border);
     border-radius: var(--default-border-radius);
-}
+    --color-placeholder:#d8d8d8;
+
+    }
+
 
 aside{
     grid-area: hero;
@@ -132,5 +135,9 @@ form {
         height: 4rem;
         border: var(--default-border);
         border-radius: var(--default-border-radius);
+
+        & .select:invalid{
+            color: var(--color-placeholder);
+        }
     }
 }
